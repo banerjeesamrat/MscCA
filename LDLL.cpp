@@ -18,7 +18,7 @@ class LDLL
     friend void addnode(LDLL * &H, LDLL * &T, int data);
     friend void deleted(LDLL * &H, LDLL * &T, int data);
 
-    friend bool PALINDRONE(LDLL *& H, LDLL *& T);
+    friend bool PALINDRONE(const LDLL * H, const LDLL * T);
 };
 
 int lengthH(LDLL * H)
@@ -128,7 +128,7 @@ void deleted(LDLL * &H, LDLL * &T, int data)
     delete(curr);
 }//End void deleted.
 
-bool PALINDRONE(LDLL *& H, LDLL *& T)
+bool PALINDRONE(const LDLL * H, const LDLL * T)
 {
     if(H==NULL)
     {
@@ -160,7 +160,7 @@ int main()
     cout<<"Linear Double Linked List\n";
     LDLL *H = NULL;
     LDLL *T = NULL;
-    int a[5] = {1,2,3,2,1};
+    int a[5] = {1,2,3,4,5};
     for(int i=0;i<5;i++)
     {
         addnode(H,T,a[i]);
