@@ -7,3 +7,10 @@ Editors -
 - Akash
 - Kushal 
 - Mihir
+
+Subjects -
+- Data Structures and Algorithms
+- Relational Database Management Systems (SQL Queries)
+- Java Standard Edition(SE)
+- JavaScript
+- Python Programming
