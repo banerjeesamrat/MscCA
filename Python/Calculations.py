@@ -1,28 +1,5 @@
 #Accept 10 numbers Find Max, Min, Average, Sum, Product of these numbers.
 '''
-numbers=[0,0,0,0,0,0,0,0,0,0]
-
-for i in range(0,10):
-    numbers[i]=int(input("Enter Numbers: "))
-
-sum=0
-product=1
-max=0
-min=0
-for i in range(0,10):
-    sum+=numbers[i]
-    product*=numbers[i]
-    if numbers[i]>max:
-        max=numbers[i]
-    if numbers[i]<min:
-        min=numbers[i]
-print("Maximum of 10 Numbers = ", max)
-print("Minimum of 10 Numbers = ", min)
-print("Sum = ", sum)
-print("Average = ", sum/10)
-print("Product = ", product)
-'''
-'''
 for i in range(0,10):
     numbers=int(input("Enter Numbers: "))
     if i==0:
