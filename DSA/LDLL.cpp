@@ -18,7 +18,7 @@ class LDLL
     friend void addnode(LDLL * &H, LDLL * &T, int data);
     friend void deleted(LDLL * &H, LDLL * &T, int data);
 
-    friend bool PALINDRONE(const LDLL * H, const LDLL * T);
+    friend bool PALINDROME(const LDLL * H, const LDLL * T);
 };
 
 int lengthH(LDLL * H)
@@ -128,7 +128,7 @@ void deleted(LDLL * &H, LDLL * &T, int data)
     delete(curr);
 }//End void deleted.
 
-bool PALINDRONE(const LDLL * H, const LDLL * T)
+bool PALINDROME(const LDLL * H, const LDLL * T)
 {
     if(H==NULL)
     {
